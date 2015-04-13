@@ -1,2 +1,2 @@
 # harmonic-theme-selfblog
-Harmonic's blog
+Harmonic's blog theme
