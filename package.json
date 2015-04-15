@@ -1,0 +1,23 @@
+{
+  "name": "harmonic-theme-selfblog",
+  "version": "0.0.1",
+  "description": "Harmonic theme",
+  "keywords": [
+    "harmonictheme",
+    "harmonic"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/es6rocks/harmonic-theme-selfblog.git"
+  },
+  "author": "Robson Júnior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/es6rocks/harmonic-theme-selfblog/issues"
+  },
+  "homepage": "https://github.com/es6rocks/harmonic-theme-selfblog"
+}

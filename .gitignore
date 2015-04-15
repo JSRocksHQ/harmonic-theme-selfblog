@@ -1,0 +1,9 @@
+node_modules/
+npm-debug.log
+.sass-cache/
+
+# IDE/text editors
+*.sublime-*
+.project
+.idea/
+nbproject/
