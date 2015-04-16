@@ -1,58 +1,51 @@
-<!-- <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ config.title }}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="/css/main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- Responsive Meta Data -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Core Meta Data -->
+    <meta name="author" content="@italowaxman, @robsongajunior, @jaydson, @mteusortiz">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Facebook Tags -->
+    <meta property="og:description" content="">
+    <meta property="og:image" content="/images/thumb.png">
+    <meta property="og:site_name" content="Harmonic">
+    <meta property="og:title" content="Harmonic">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+
+    <!-- Twitter tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="Usuário do Twitter">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="/images/thumb.png">
+
+    <!-- Humans -->
+    <link rel="author" href="/AUTHORS" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="/css/vendor/prism.css"/>
+    <link rel="stylesheet" href="/css/vendor/normalize.css">
+    <link rel="stylesheet" href="/css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="/css/vendor/bootstrap-theme.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Harmonic | Static website generator</title>
 </head>
 <body>
-	{% include "partials/navigation.html" %}
-    <header class="topWrap">
-        <section class="lobby">
-            <h1 class="pageTitle">
-                {{ config.title }}
-            </h1>
-            <a href="/">
-                <img class="logo" src="/images/logo.svg" alt="ES6Rocks" />
-            </a>
-        </section>
-    </header>
-
-    <section id="posts" class="posts">
-        <ul class="postList">
-            {% for post in posts %}
-            <li class="post">
-                <span class="post__date">
-                    {{ post.date }}
-                </span>
-                <article class="post__content">
-                    <a class="post__title" href="/{{ post.link }}">
-                        {{ post.title }}
-                    </a>
-                    <section class="post__excerpt">
-                        {{ post.content }}
-                    </section>
-                </article>
-                <section class="post__author">
-                    <figure class="author">
-                        <img class="author__photo" src="{{ post.authorPicture }}" />
-                        <figcaption>
-                            <a class="author__link" href="{{ post.authorLink }}">@Jaydson</a>
-                        </figcaption>
-                    </figure>
-                    <section class="author__description">
-                        {{ post.authorDescription }}
-                    </section>
-                </section>
-            </li>
-            {% endfor %}
-        </ul>
-    </section>
-</main>
-
-{% include "partials/footer.html" %}
-
+    <h1>Not found!!</h1>
 </body>
-</html> -->
+</html>
