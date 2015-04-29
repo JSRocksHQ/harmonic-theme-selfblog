@@ -1,5 +1,1 @@
-$(document).ready(function () {
-
-	console.log('Harmonic is loaded!');
-
-});
+console.log('Harmonic is loaded!');
