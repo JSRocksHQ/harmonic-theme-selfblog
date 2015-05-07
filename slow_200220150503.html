@@ -1,0 +1,57 @@
+<!-- SlowHTTPTest Analysis chart (c) Sergey Shekyan, Victor Agababov 2011  -->
+ <html>
+   <head>
+   <style>
+     body { font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif; background-color: transparent; color: #333; -webkit-font-smoothing: antialiased; } 
+     .slow_results {font-size: 12px; } 
+     </style>
+     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+     <script type="text/javascript">
+       google.load("visualization", "1", {packages:["corechart"]});
+       google.setOnLoadCallback(drawChart);
+       function drawChart() {
+         var data = new google.visualization.DataTable();
+         data.addColumn('string', 'Seconds');
+         data.addColumn('number', 'Closed');
+         data.addColumn('number', 'Pending');
+         data.addColumn('number', 'Connected');
+         data.addColumn('number', 'Service available');
+         data.addRows([
+['0',0,1,0,1000],
+['1',0,52,142,1000],
+['2',0,80,305,1000],
+['3',0,106,467,1000],
+['4',0,155,606,1000],
+['5',0,215,731,1000],
+['6',0,136,864,1000],
+['7',0,66,934,1000],
+['8',0,27,973,1000],
+['9',0,5,995,1000],
+['10',0,2,998,1000],
+['11',0,0,1000,1000],
+['12',0,0,1000,1000],
+['13',0,0,1000,1000],
+['14',0,0,1000,1000],
+['15',0,0,1000,1000],
+['16',0,0,1000,1000],
+['17',0,0,1000,1000],
+['18',0,0,1000,1000],
+['19',0,0,1000,1000],
+['20',0,0,1000,1000],
+['21',0,0,1000,1000],
+['22',0,0,1000,1000],
+['23',0,0,1000,1000],
+        ]);
+         var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+         chart.draw(data, {'width': 600, 'height': 360, 'title': 'Test results against http://nodo.cc/pt',         hAxis: {'title': 'Seconds', 'titleTextStyle': {color: '#FF0000'}},
+         vAxis: {'title': 'Connections', 'titleTextStyle': {color: '#FF0000'}, 'viewWindowMode':'maximized'}
+     });
+     }
+     </script>
+     <title>SlowHTTPTest(tm) Connection Results</title>
+   </head>
+   <body>
+   <p><table class='slow_results' border='0'><tr><th>Test parameters</th></tr><tr><td><b>Test type</b></td><td>SLOW READ</td></tr><tr><td><b>Number of connections</b></td><td>1000</td></tr><tr><td><b>Receive window range</b></td><td>512 - 1024</td></tr><tr><td><b>Pipeline factor</b></td><td>3</td></tr><tr><td><b>Read rate from receive buffer</b></td><td>32 bytes / 5 sec</td></tr><tr><td><b>Connections per seconds</b></td><td>200</td></tr><tr><td><b>Timeout for probe connection</b></td><td>3</td></tr><tr><td><b>Target test duration</b></td><td>240 seconds</td></tr><tr><td><b>Using proxy</b></td><td>no proxy  </td></tr></table></p>
+     <div id="chart_div"></div>
+   </body>
+ </html>

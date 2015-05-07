@@ -1,7 +1,56 @@
-html['page-range="small"'] {} // remove wrapper
+/**
+*
+* SMALL SCREEN
+*
+**/
+@media screen and (max-width: 639px)
+	.wrap-content
+		width 300px
 
-html['page-range="medium"'] {} // remove wrapper
+	header
+		.social-network
+			display none
 
-html['page-range="large'] {} // remove wrapper
+		.slogan
+			width 295px
+			white-space nowrap
+			text-overflow ellipsis
+			position relative
+			overflow hidden
 
-html['page-range="xlarge"'] {} // remove wrapper
+		.logo
+			width 100%
+			height 74px
+
+/**
+*
+* MEDIUM SCREEN
+*
+**/
+@media screen and (min-width: 640px) and (max-width: 979px)
+	.wrap-content
+		width 620px
+
+	header
+		.slogan
+			font-size 9px
+
+
+/**
+*
+* LARGE SCREEN
+*
+**/
+@media screen and (min-width: 980px)
+	.wrap-content
+		width 940px
+
+
+/**
+*
+* XLARGE SCREEN
+*
+**/
+@media screen and (min-width: 1170px)
+	.wrap-content
+		width 1170px

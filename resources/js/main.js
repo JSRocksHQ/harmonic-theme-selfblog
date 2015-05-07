@@ -27,19 +27,21 @@ var HarmonicWebsite = function () {
 	* PRIVATE METHODS
 	*
 	**/
-	PRIVATE.viewportApply = function (windowSize) {
+	PRIVATE.viewportDefine = function (windowSize) {
 		var bodyElement = D.getElementsByTagName('body')[0],
-			ww = windowSize.windowWidth; // 1170
+			ww = windowSize.windowWidth;
+
+		console.log('### ww', windowSize);
 
 		switch(true) {
 			case ww >= 1190:
-				HTML.setAttribute('data-range', BREAKPOINTS.l);
+				PUBLIC.setAttrElement(HTML, 'data-range', BREAKPOINTS.l);
 				break;
 			case ww >= 768 && ww < 1024:
-				HTML.setAttribute('data-range', BREAKPOINTS.m);
+				PUBLIC.setAttrElement(HTML, 'data-range', BREAKPOINTS.m);
 				break;
 			case ww >= 320 && ww < 768:
-				HTML.setAttribute('data-range', BREAKPOINTS.s);
+				PUBLIC.setAttrElement(HTML, 'data-range', BREAKPOINTS.s);
 				break;
 			default:
 				console.log('Sorry, your HTML size not exist.');
@@ -53,23 +55,19 @@ var HarmonicWebsite = function () {
 	*
 	**/
 	PUBLIC.windowSize = function () {
-		function getDocHeight () {
-		    return Math.max(
+		var ww = Math.max(
+		        D.body.scrollWidth, HTML.scrollWidth,
+				D.body.offsetWidth, HTML.offsetWidth,
+				D.body.clientWidth, HTML.clientWidth
+		    ),
+
+			wh = Math.max(
 		        BODY.scrollHeight, HTML.scrollHeight,
 		        BODY.offsetHeight, HTML.offsetHeight,
 		        BODY.clientHeight, HTML.clientHeight
 		    );
-		};
 
-		function getDocWidth () {
-		    return Math.max(
-		        BODY.scrollWidth, HTML.scrollWidth,
-		        BODY.offsetWidth, HTML.offsetWidth,
-		        BODY.clientWidth, HTML.clientWidth
-		    );
-		};
-
-		return {windowWidth: getDocWidth(), windowHight: getDocHeight()}
+		return {windowWidth: ww, windowHight: wh}
 	};
 
 	PUBLIC.setAttrElement = function (el, key, value) {
@@ -83,11 +81,7 @@ var HarmonicWebsite = function () {
 	*
 	**/
 	(function HarmonicWebsite () {
-		PRIVATE.viewportApply(PUBLIC.windowSize());
-
-		W.addEventListener('resize', function () {
-			PRIVATE.viewportApply(PUBLIC.windowSize());
-		});
+		// PRIVATE.viewportDefine(PUBLIC.windowSize());
 	})();
 
 	return PUBLIC;
@@ -99,4 +93,4 @@ var HarmonicWebsite = function () {
 * HARMONIC OBJECT
 *
 **/
-var website = new HarmonicWebsite();
+// var website = new HarmonicWebsite();
