@@ -3,7 +3,6 @@
 * RESET
 *
 **/
-
 *
     margin: 0
     padding: 0
@@ -144,3 +143,13 @@ text-decoration: underline
 
 img
 	max-width 100%
+
+.clearfix:before,
+.clearfix:after
+    width 100%
+    height 0
+    content ''
+    display block
+
+.clearfix:after
+    clear both

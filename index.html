@@ -28,7 +28,7 @@
     <meta name="twitter:image" content="/images/thumb.png">
 
     <!-- AUTHORS -->
-    <link rel="author" href="/AUTHORS" />
+    <link rel="author" href="/humans.txt" />
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
@@ -44,20 +44,69 @@
 <body>
     {% include "partials/header.html" %}
 
-    <div class="block-content content-1 default-padding">
+    <section class="wrap-content">
+        <div class="harmonic-repo">
+            <div class="wrap-btn">
+                <div class="wrap-star-title">
+                    <h3 class="title-secondary title-ray text-secondary-color">We Want You</h3>
+                    <p>If you're a JavaScript hacker, help us!</p>
+                </div>
+                <a href="https://github.com/JSRocksHQ/harmonic" title="GitHub Harmonic repository" class="btn-default" target="_blank">project repository</a>
+            </div>
+        </div>
+        <div class="article-txt home-article-txt">
+            <div class="m-b-med"></div>
+
+            <article class="m-b-gt text-default-strong">
+                <h2 class="title-secondary m-b-default">INTRO</h2>
+                <p>
+                    Harmonic is yet another JavaScript static website generator, but mordern.
+                    <br>
+                    Harmonic's core is built using the latest JavaScript features.
+                    <br>
+                    By using the ECMA-262 Standard we're helping the JavaScript language to envolve and also learning how to play with.
+                    <br>
+                    Besides that Harmonic actually does the "static website generator" jpb pretty well.
+                </p>
+            </article>
+
+            <article class="m-b-gt text-default-strong">
+                <h2 class="title-secondary m-b-default">MODERN</h2>
+                Harmomic is built using the mordern JavaScript (ES2015/ES6 - ES2016/ES7).
+                Take a look at the code, start learning the new JavaScript and fell free to contribute.
+
+                <br><br>
+
+                <a href="https://github.com/JSRocksHQ/harmonic" title="GitHub Harmonic repository" class="btn-link" target="_blank">Hack the code</a>
+            </article>
+
+            <article class="m-b-gt text-default-strong">
+                <h2 class="title-secondary m-b-default">PAINLESS BLOGGING</h2>
+                As usual a static website generator, you can focus on your content. Just write some markdown files and Harmonic will take care of everything, including pages, articles, categories and themes.
+
+                <br><br>
+
+                <a href="https://github.com/JSRocksHQ/harmonic-theme-selfblog" title="Harmonic theme blogging" class="btn-link" target="_blank">Blogging</a>
+            </article>
+        </div>
+
+        <div class="clearfix"></div>
+    </section>
+
+    <div class="content-1 default-padding">
         <div class="wrap-content">
             <h2>Easy to start</h2>
         </div>
-     </div>
+    </div>
 
-    <div class="block-content default-padding">
+    <div class="default-padding">
         <div class="wrap-content">
             <h2>Now youtre able to build your awesome website!</h2>
             <p class="obs">Check out the documentation in <a href="https://github.com/JSRocksHQ/harmonic/wiki" title="Harmonic's wiki" target="_blank">Harmonic's wiki</a> </p>
         </div>
     </div>
 
-    <div class="block-content code-build">
+    <div class="code-build">
         <div class="wrap-content">
             <div>
                 [Code block]
@@ -66,7 +115,7 @@
         </div>
     </div>
 
-    <div class="block-content">
+    <div>
         <div class="wrap-content">
             <img src="resources/images/logo-js.png" alt="Javascript" title="Javascript">
 
@@ -75,18 +124,13 @@
         </div>
     </div>
 
-    <div class="block-content">
+    <div>
         <div class="wrap-content">
             <h2>Are you using Harmonic?</h2>
             <a href="" title="">Let us know!</a>
         </div>
     </div>
 
-    <div class="block-content">
-        <div class="wrap-content">
-            <p class="ass-design">Designed by <a href="http://br.linkedin.com/in/italowaxman/" title="Designed by Ítalo Waxman" target="_blank">Ítalo Waxman</a></p>
-        </div>
-    </div>
 
     {% include "partials/footer.html" %}
     {% include "partials/scripts.html" %}
