@@ -5,8 +5,11 @@
 **/
 
 
-.wrap-content
+.wrap-content,
+.wrap-sub-content
 	margin 0 auto
+
+.wrap-content
 	padding 0 15px
 
 .block-content
@@ -23,10 +26,26 @@
 
 .content-1
 	width 100%
-	height 347px
+	height 408px
 	background-image url('../images/bg-start.jpg')
 	background-position center top
 	background-repeat repeat-x
+
+
+// DIVISOR
+.divisor
+	margin 50px 0
+	height 1px
+
+	svg
+		position relative
+		top -13px
+
+	hr
+		border none
+		border-bottom solid 1px color_text
+		height 1px
+		width 350px
 
 
 // DEFAULT MARGINS
@@ -40,12 +59,15 @@
 	margin-bottom 45px
 
 
-// TYPOGRAPH
+// TEXT
 .text-default-strong
 	font-family font_strong-regular
 
 .text-secondary-color
 	color fontColor_red-darker
+
+.text-default-position
+	text-align center
 
 
 // BUTTONS
