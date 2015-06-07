@@ -41,23 +41,37 @@ h6
 .title-ray
 	display inline-block
 
-	&:before,
-	&:after
-		display block
-		width 20px
-		height 20px
-		background black
-		content ''
-		position relative
-		top 8px
+	.icon-title-ray
+		margin: 0 13px;
+		transform_rotate(62deg)
 
-	&:before
-		float left
-		margin-right 15px
+.title-sub-description
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+		margin-bottom 6px
 
-	&:after
-		float right
-		margin-left 15px
+	.sub-description
+		font-size 20px
+
+		a
+			text-decoration underline
+
+			&:hover
+				text-decoration none
+
+	&.title-sub-description-light
+		.sub-description
+			color color_background
+
+			a
+				color color_textHilight
+
+
+
 
 // SOCIAL NETWORK
 .social-network
@@ -124,3 +138,24 @@ h6
 .home-article-txt
 	float right
 	width 652px
+
+
+// HARMONIC INSTALL
+.wrap-harmonic-install
+
+	.harmonic-install-description
+		font-size 18px
+		font-family font_strong-regular
+		text-transform uppercase
+		color color_title
+
+
+	.harmonic-install-npm
+		background color_white
+		padding 30px 20px
+		font-family font_strong-regular
+		font-size 20px
+		color #525252
+		margin-top 15px
+		text-align left
+		border-radius 5px
