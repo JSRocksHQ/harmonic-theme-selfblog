@@ -44,14 +44,20 @@
 <body>
     {% include "partials/header.html" %}
 
-    <div class="wrap-content">
+    <section class="wrap-content">
         <div class="harmonic-repo">
-            <!-- WE WANT YOU [IMAGE HERE] -->
+            <div class="wrap-btn">
+                <div class="wrap-star-title">
+                    <h3 class="title-secondary title-ray text-secondary-color">We Want You</h3>
+                    <p>If you're a JavaScript hacker, help us!</p>
+                </div>
+                <a href="https://github.com/JSRocksHQ/harmonic" title="GitHub Harmonic repository" class="btn-default" target="_blank">project repository</a>
+            </div>
         </div>
         <div class="article-txt home-article-txt">
             <div class="m-b-med"></div>
 
-            <article class="m-b-gt">
+            <article class="m-b-gt text-default-strong">
                 <h2 class="title-secondary m-b-default">INTRO</h2>
                 <p>
                     Harmonic is yet another JavaScript static website generator, but mordern.
@@ -64,24 +70,28 @@
                 </p>
             </article>
 
-            <article class="m-b-gt">
+            <article class="m-b-gt text-default-strong">
                 <h2 class="title-secondary m-b-default">MODERN</h2>
                 Harmomic is built using the mordern JavaScript (ES2015/ES6 - ES2016/ES7).
                 Take a look at the code, start learning the new JavaScript and fell free to contribute.
 
-                <a href="" title="" class="">Hack the code</a>
+                <br><br>
+
+                <a href="https://github.com/JSRocksHQ/harmonic" title="GitHub Harmonic repository" class="btn-link" target="_blank">Hack the code</a>
             </article>
 
-            <article class="m-b-gt"     >
+            <article class="m-b-gt text-default-strong">
                 <h2 class="title-secondary m-b-default">PAINLESS BLOGGING</h2>
                 As usual a static website generator, you can focus on your content. Just write some markdown files and Harmonic will take care of everything, including pages, articles, categories and themes.
 
-                <a href="" title="" class="">Blogging</a>
+                <br><br>
+
+                <a href="https://github.com/JSRocksHQ/harmonic-theme-selfblog" title="Harmonic theme blogging" class="btn-link" target="_blank">Blogging</a>
             </article>
         </div>
 
         <div class="clearfix"></div>
-    </div>
+    </section>
 
     <div class="content-1 default-padding">
         <div class="wrap-content">
@@ -121,11 +131,6 @@
         </div>
     </div>
 
-    <div>
-        <div class="wrap-content">
-            <p class="ass-design">Designed by <a href="http://br.linkedin.com/in/italowaxman/" title="Designed by Ítalo Waxman" target="_blank">Ítalo Waxman</a></p>
-        </div>
-    </div>
 
     {% include "partials/footer.html" %}
     {% include "partials/scripts.html" %}
