@@ -10,9 +10,9 @@ body
 	color color_text
 	background color_white
 	background-color #FFF8E8
-	background-image url('../images/bg-top.jpg')
-	background-position center 40px
-	background-repeat repeat-x
+	background-image url('../images/bg-top.jpg'),  url('../images/thunder-right.png')
+	background-position center 40px, 169% 736px
+	background-repeat repeat-x, no-repeat
 	bgSize(100%, auto)
 
 a
@@ -197,8 +197,12 @@ h6
 		.text-commentary
 			color color_gray-light
 
-.content-3
-
+.content-2
+	background-position left -180px, center -380px
+	background-repeat no-repeat, repeat-x
+	background-image 	url('../images/thunder-left.png'),
+						url('../images/bg-build.jpg')
+ 
 	.logo-js
 		margin-bottom 30px
 
