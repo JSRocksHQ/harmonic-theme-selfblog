@@ -23,9 +23,11 @@
         width 300px
 
     .header
+        text-align center
+
         .social-network
             float none
-            text-align center
+            display inline-block
 
         .slogan
             display none
@@ -199,6 +201,14 @@
             font-size 26px
             line-height 28px
 
+    .square-box
+        li:first-child,
+        li:nth-child(3n + 4)
+            margin-left 0
+
+        li:nth-child(3n + 3)
+            margin-right 0
+
 
 /**
 *
@@ -211,3 +221,11 @@
 
     .wrap-sub-content
         width 750px
+
+    .square-box
+        li:first-child,
+        li:nth-child(3n + 4)
+            margin-left 0
+
+        li:nth-child(3n + 3)
+            margin-right 0

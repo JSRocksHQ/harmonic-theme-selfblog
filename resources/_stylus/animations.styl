@@ -1,0 +1,58 @@
+/**
+*
+* @effect: thunder
+*
+**/
+
+@keyframes thunder {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        transform: rotate3d(0, 0, 1, -4.5deg);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: rotate3d(0, 0, 1, 4.5deg);
+    }
+}
+
+@-webkit-keyframes thunder {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        transform: rotate3d(0, 0, 1, -4.5deg);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: rotate3d(0, 0, 1, 4.5deg);
+    }
+}
+
+.icon:hover,
+.icon-title-ray {
+    animation-name: thunder;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: thunder;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+
+    transition: all 150ms ease 0s;
+}
