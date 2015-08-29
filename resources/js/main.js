@@ -29,39 +29,35 @@ var HarmonicWebsite = function () {
     *
     */
     PUBLIC.contributors = function (url) {
-        console.log('ENTERED: CONTRIBUTORS FUNCTION');
-
-        (function (window, document) {
+        (function () {
 
             'use strict';
 
             var oReq = new XMLHttpRequest();
             var url = 'https://api.github.com/repos/JSRocksHQ/harmonic/contributors';
 
-            // Callback function
             function appendContributors() {
-                /*jshint validthis: true*/
                 var result = JSON.parse(this.responseText),
                     tpl = '<li class="contributor" itemprop"itemListElement" itemscope itemtype="http://schema.org/Person"><a href="#" target="_blank"><img class="picture"></a></li>',
                     str = '',
                     div;
 
                 for (var i = 0; i < result.length; i++) {
-                    div = document.createElement('div');
+                    div = D.createElement('div');
                     div.innerHTML = tpl;
                     div.querySelector('a').href = result[i].html_url;
                     div.querySelector('img').src = result[i].avatar_url + '&size=120';
                     str += div.innerHTML;
                 }
 
-                document.querySelector('#wrapContributors').innerHTML = str;
+                D.querySelector('#wrapContributors').innerHTML = str;
             }
 
             oReq.addEventListener('load', appendContributors);
             oReq.open('get', url, true);
             oReq.send();
 
-        })(window, document);
+        })();
     };
 
 	/**

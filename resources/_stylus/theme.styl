@@ -290,13 +290,25 @@ h6
 #wrapContributors
     list-style none
     display block
-    margin-top 20px
+    margin 20px 0 0 0
+    text-align center
+    line-height 0
+    position relative
 
     li
-        display block
-        float left
+        display inline-block
         position relative
+        overflow hidden
 
+        &:hover
+            img,
+            a
+                transform scale(1.1)
+                -webkit-transform scale(1.1)
+                -moz-transform scale(1.1)
+                -o-transform scale(1.1)
+
+        a,
         img
             width 100%
             height 100%
@@ -305,8 +317,14 @@ h6
             left 0
             top 0
 
+            -webkit-transform scale(1)
+            -moz-transform scale(1)
+            -o-transform scale(1)
+            transform scale(1)
 
-// #wrapContributors
-//     li
-//         width
-//         height
+            transition all .3s ease
+            -webkit-transition all .3s ease
+            -moz-transition all .3s ease
+            -o-transition all .3s ease
+
+
