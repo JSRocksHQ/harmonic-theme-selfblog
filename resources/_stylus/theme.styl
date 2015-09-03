@@ -3,22 +3,32 @@
 * HARMONIC THEME
 *
 **/
+*
+    b-sizing(border-box)
+
 body
     font-family font_strong-regular
     font-size 20px
     line-height 24px
     color color_text
+
+.wrap-zindex
+    box-shadow 0 -2px 3px rgba(0,0,0, 0.15)
+    padding 40px 0 0
+    margin 40px 0 0
     background color_white
     background-color #FFF8E8
     background-image    url('../images/bg-top.jpg'),
                         url('../images/thunder-right.png')
-    background-position center 40px, 53% 783px
+    background-position center top, 53% 783px
     background-repeat repeat-x, no-repeat
     bgSize(100%, auto)
+    position relative
+    z-index 100
+
 
 a
     color color_title
-
 
 
 // TITLE
@@ -107,6 +117,7 @@ h6
     .icon-tw,
     .icon-gh
         background-position center center
+
 
 
 // REPO CALL LOGO
@@ -228,6 +239,13 @@ h6
         position relative
         text-align center
 
+        animate-transition(all, .15s, ease)
+        transform-scale(1)
+
+        &:hover
+            box-shadow 0px 1px 5px rgba(0, 0, 0, 0.25)
+            transform-scale(1.1)
+
         &:first-child
             margin-left 0
 
@@ -243,6 +261,7 @@ h6
         padding 10px
         background-color fontColor_red-darker
         display block
+        animate-transition(all, .15s, ease-in-out)
 
         .title-default
             font-size 32px
@@ -252,12 +271,13 @@ h6
             margin-top -51px
             color #fff
 
+            animate-transition(all, .15s, ease-in-out)
+
             span
                 color #000
 
         &:hover
             background-color transparent
-            transition(all 0.3s ease)
 
             .title-default
                 color fontColor_brown-darker
@@ -285,3 +305,36 @@ h6
     p
         font-size 15px
         line-height 17px
+
+
+#wrapContributors
+    line-height 0
+    display block
+    list-style none
+    text-align center
+    position relative
+    margin 20px 0 0 0
+
+    li
+        display inline-block
+        position relative
+        z-index 0
+        overflow hidden
+
+        animate-transition(all, .15s, ease)
+        transform-scale(1)
+
+        &:hover
+            z-index 500
+            box-shadow 0 1px 5px rgba(0, 0, 0, 0.75)
+
+            transform-scale(1.1)
+
+        a,
+        img
+            width 100%
+            height 100%
+            display block
+            position absolute
+            left 0
+            top 0

@@ -39,218 +39,235 @@
     <title>Harmonic | Static Website Generator</title>
 </head>
 <body>
-    {% include "partials/header.html" %}
+    {% include "partials/slogan-bar.html" %}
 
-    <section class="wrap-content">
-        <div class="harmonic-repo">
-            <div class="wrap-btn">
-                <div class="wrap-star-title">
-                    <h3 class="title-secondary title-ray text-secondary-color">
-                        <svg version="1.1" class="icon-title-ray" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
-                            <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FCCF0F" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
-                        </svg>
-                        We Want You
-                        <svg version="1.1" class="icon-title-ray" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
-                            <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FCCF0F" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
-                        </svg>
-                    </h3>
-                    <p>If you're a JavaScript hacker, help us!</p>
-                </div>
-                <a href="https://github.com/JSRocksHQ/harmonic" title="GitHub Harmonic repository" class="btn-default" target="_blank">project repository</a>
-            </div>
-        </div>
-        <div class="article-txt home-article-txt">
-            <div class="m-b-med"></div>
+    <div class="wrap-zindex">
+        {% include "partials/header.html" %}
 
-            <article class="m-b-gt text-default-strong">
-                <h2 class="title-secondary m-b-default">INTRO</h2>
-                <p>
-                    Harmonic is yet another JavaScript static website generator, but modern.
-                    <br>
-                    Harmonic's core is built using the latest JavaScript features.
-                    <br>
-                    By using the ECMA-262 Standard we're helping the language to evolve and also learning how to play with it.
-                    <br>
-                    Besides that, Harmonic actually does the "static website generator" job pretty well.
-                </p>
-            </article>
-
-            <article class="m-b-gt text-default-strong">
-                <h2 class="title-secondary m-b-default">MODERN</h2>
-                Harmomic is built using the modern JavaScript (ES2015/ES6+).
-                Take a look at the code, start learning the new JavaScript and feel free to contribute.
-
-                <br><br>
-
-                <a href="https://github.com/JSRocksHQ/harmonic" title="GitHub Harmonic repository" class="btn-link" target="_blank">Hack the code</a>
-            </article>
-
-            <article class="m-b-gt text-default-strong">
-                <h2 class="title-secondary m-b-default">PAINLESS BLOGGING</h2>
-                As usual in a static website generator, you can focus on your content. Just write some markdown files and Harmonic will take care of everything, including pages, articles, categories and themes.
-
-                <br><br>
-
-                <a href="https://github.com/JSRocksHQ/harmonic-theme-selfblog" title="Harmonic theme blogging" class="btn-link" target="_blank">Blogging</a>
-            </article>
-        </div>
-
-        <div class="clearfix"></div>
-    </section>
-
-    <div class="content-1 default-padding">
-        <div class="wrap-sub-content text-default-position">
-            <header class="title-sub-description title-sub-description-light">
-                <h2 class="title-default">Easy to start</h2>
-                <p class="sub-description">You will need <a href="https://nodejs.org/" title="Node.js project" target="_blank">Node.js</a> >= 0.10 or <a href="https://iojs.org/en/index.html" title="io.js project" target="_blank">io.js</a></p>
-            </header>
-
-            <div class="divisor">
-                <hr class="fl">
-                <svg version="1.1" class="" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
-                    <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#391e16" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
-                </svg>
-                <svg version="1.1" class="" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
-                    <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#391e16" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
-                </svg>
-                <hr class="fr">
-            </div>
-
-            <div class="wrap-harmonic-install">
-                <p class="harmonic-install-description">Harmonic is available as npm module:</p>
-                <p class="harmonic-install-npm">npm install harmonic -g</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="content-2 bg-top default-padding no-padding-bottom">
-        <div class="wrap-sub-content text-default-position">
-            <header class="title-sub-description title-sub-description-darker">
-                <h2 class="title-default">Now you're able to build <br> your awesome website!</h2>
-                <p class="sub-description">Check out the documentation in <a href="https://github.com/JSRocksHQ/harmonic/wiki" title="Harmonic's wiki" target="_blank">Harmonic's wiki</a> </p>
-            </header>
-            <div class="divisor">
-                <hr class="fl">
-                <svg version="1.1" class="" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
-                    <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#391e16" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
-                </svg>
-                <svg version="1.1" class="" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
-                    <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#391e16" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
-                </svg>
-                <hr class="fr">
-            </div>
-
-            <div class="wrap-code">
-                <p class="code">
-                    harmonic init <span class="text-title-color">"my_awesome_website"</span>
-                    <br>
-                    <span class="text-default-color">cd</span> my_awesome_website
-                    <br>
-                    harmonic run
-                    <br>
-                    <span class="text-commentary"># Harmonic site is runing at http://localhost:9356</span>
-                </p>
-                <p>Now you're ready to <a href="https://github.com/JSRocksHQ/harmonic/wiki/Blogging#new-post" title="How to creating posts">create posts</a>!</p>
-            </div>
-
-            <div class="divisor">
-                <hr class="fl">
-                <svg version="1.1" class="" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
-                    <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#391e16" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
-                </svg>
-                <svg version="1.1" class="" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
-                    <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#391e16" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
-                </svg>
-                <hr class="fr">
-            </div>
-        </div>
-
-        <div class="wrap-content text-default-position">
-            <img class="logo-js" src="/images/logo-js.png" alt="JavaScript Logo" title="JavaScript Logo">
-
-            <h2 class="title-default title-destak">Harmonic in action</h2>
-            <p class="obs">The website is already online <a href="http://jsrocks.org" title="JSROCKS Website" target="_blank">JSROCKS</a> </p>
-        </div>
-
-        <div class="wrap-content default-padding">
-            <ul class="square-box">
-                <li>
-                    <div class="img">
-                        <a href="http://jsrocks.org" title="jsrocks.org" target="_blank">
-                            <img src="/images/logo-es6.png" alt="JSRocks logo">
-                        </a>
-                    </div>
-                    <div class="description">
-                        <a class="square-box-title" href="http://jsrocks.org" title="jsrocks.org" target="_blank">jsrocks.com</a>
-                        <p>
-                            A collaborative website about the
-                            <br>
-                            ECMAScript sixth edition, a.k.a. ES6
-                        </p>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="img">
-                        <a href="http://harmonicjs.com" title="harmonicjs.com" target="_blank">
-                            <img src="/images/logo-harmonic-med.png" alt="Harmonic logo">
-                        </a>
-                    </div>
-                    <div class="description">
-                        <a class="square-box-title" href="http://harmonicjs.com" title="harmonicjs.com" target="_blank">harmonicjs.com</a>
-                        <p>Harmonic website itself.</p>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="img">
-                        <a href="http://jaydson.org" title="jaydson.org" target="_blank">
-                            <img src="/images/logo-jaydson.png" alt="Jaydson logo">
-                        </a>
-                    </div>
-                    <div class="description">
-                        <a class="square-box-title" href="http://jaydson.org" title="jaydson.org" target="_blank">jaydson.org</a>
-                        <p>Harmonic's maintainer personal website.</p>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="img">
-                        <a class="square-box-title" href="http://nodebotsday-poa.github.io/" title="Node Bots" target="_blank">
-                            <img src="/images/nodebot_logo.png" alt="NodeBot">
-                        </a>
-                    </div>
-                    <div class="description">
-                        <a class="square-box-title" href="http://nodebotsday-poa.github.io/" title="Node Bots" target="_blank">nodebotsday-poa.github.io</a>
-                        <p>Hardware using JavaScript</p>
-                    </div>
-                </li>
-
-                <li>
-                    <a href="https://github.com/jsrockshq/harmonic/issues/new?title=New+showcase%3A+%5Binsert+name%5D%0A&body=Please+fill+the+following+out%3A%0A%0A-+Name%3A+%28correctly+formatted%29%0A-+Homepage+url%3A+%28homepage%2Fprimary+entry+point+for+users%29%0A-+Short+description%3A+%28short+description+of+the+project%29%0A-+Logo%3A+%28svg+if+possible%2C+pngs+over+330x175px+with+transparent+backgrounds+are+also+acceptable%29%0A%0A%3E+Example%3A%0A%3E%0A%3E+Name%3A+JSRocks%0A%3E+Homepage+url%3A+http%3A%2F%2Fjsrocks.org%0A%3E+Description%3A+A+collaborative+website+about+the+ECMAScript+sixth+edition%0A%3E+Logo%3A+http%3A%2F%2Fwww.jsrocks.org%2Fimages%2Flogo.svg%0A" title="Let us know" class="special-card" target="_blank">
-                        <h3 class="title-default">
-                            Are you using Harmonic?
-                            <br>
-                            <span>Let us know</span>
+        <div class="wrap-content">
+            <div class="harmonic-repo">
+                <div class="wrap-btn">
+                    <div class="wrap-star-title">
+                        <h3 class="title-secondary title-ray text-secondary-color">
+                            <svg version="1.1" class="icon-title-ray" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
+                                <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FCCF0F" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
+                            </svg>
+                            We Want You
+                            <svg version="1.1" class="icon-title-ray" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
+                                <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FCCF0F" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
+                            </svg>
                         </h3>
-                    </a>
-                </li>
-            </ul>
+                        <p>If you're a JavaScript hacker, help us!</p>
+                    </div>
+                    <a href="https://github.com/JSRocksHQ/harmonic" title="GitHub Harmonic repository" class="btn-default" target="_blank">project repository</a>
+                </div>
+            </div>
+            <div class="article-txt home-article-txt">
+                <div class="m-b-med"></div>
+
+                <article class="m-b-gt text-default-strong">
+                    <h2 class="title-secondary m-b-default">INTRO</h2>
+                    <p>
+                        Harmonic is yet another JavaScript static website generator, but modern.
+                        <br>
+                        Harmonic's core is built using the latest JavaScript features.
+                        <br>
+                        By using the ECMA-262 Standard we're helping the language to evolve and also learning how to play with it.
+                        <br>
+                        Besides that, Harmonic actually does the "static website generator" job pretty well.
+                    </p>
+                </article>
+
+                <article class="m-b-gt text-default-strong">
+                    <h2 class="title-secondary m-b-default">MODERN</h2>
+                    Harmomic is built using the modern JavaScript (ES2015/ES6+).
+                    Take a look at the code, start learning the new JavaScript and feel free to contribute.
+
+                    <br><br>
+
+                    <a href="https://github.com/JSRocksHQ/harmonic" title="GitHub Harmonic repository" class="btn-link" target="_blank">Hack the code</a>
+                </article>
+
+                <article class="m-b-gt text-default-strong">
+                    <h2 class="title-secondary m-b-default">PAINLESS BLOGGING</h2>
+                    As usual in a static website generator, you can focus on your content. Just write some markdown files and Harmonic will take care of everything, including pages, articles, categories and themes.
+
+                    <br><br>
+
+                    <a href="https://github.com/JSRocksHQ/harmonic-theme-selfblog" title="Harmonic theme blogging" class="btn-link" target="_blank">Blogging</a>
+                </article>
+            </div>
 
             <div class="clearfix"></div>
         </div>
 
-        <!-- <div class="wrap-content text-default-position">
-            <h3 class="title-default">
-                Are you using Harmonic?
-                <br>
-                <a href="#" title="" class="title-destak">Let us know</a>
-            </h3>
-        </div> -->
+        <div class="content-1 default-padding">
+            <div class="wrap-sub-content text-default-position">
+                <header class="title-sub-description title-sub-description-light">
+                    <h2 class="title-default">Easy to start</h2>
+                    <p class="sub-description">You will need <a href="https://nodejs.org/" title="Node.js project" target="_blank">Node.js</a> >= 0.10 or <a href="https://iojs.org/en/index.html" title="io.js project" target="_blank">io.js</a></p>
+                </header>
+
+                <div class="divisor">
+                    <hr class="fl">
+                    <svg version="1.1" class="" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
+                        <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#391e16" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
+                    </svg>
+                    <svg version="1.1" class="" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
+                        <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#391e16" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
+                    </svg>
+                    <hr class="fr">
+                </div>
+
+                <div class="wrap-harmonic-install">
+                    <p class="harmonic-install-description">Harmonic is available as npm module:</p>
+                    <p class="harmonic-install-npm">npm install harmonic -g</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-2 bg-top default-padding no-padding-bottom">
+            <div class="wrap-sub-content text-default-position">
+                <header class="title-sub-description title-sub-description-darker">
+                    <h2 class="title-default">Now you're able to build <br> your awesome website!</h2>
+                    <p class="sub-description">Check out the documentation in <a href="https://github.com/JSRocksHQ/harmonic/wiki" title="Harmonic's wiki" target="_blank">Harmonic's wiki</a> </p>
+                </header>
+                <div class="divisor">
+                    <hr class="fl">
+                    <svg version="1.1" class="" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
+                        <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#391e16" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
+                    </svg>
+                    <svg version="1.1" class="" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
+                        <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#391e16" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
+                    </svg>
+                    <hr class="fr">
+                </div>
+
+                <div class="wrap-code">
+                    <p class="code">
+                        harmonic init <span class="text-title-color">"my_awesome_website"</span>
+                        <br>
+                        <span class="text-default-color">cd</span> my_awesome_website
+                        <br>
+                        harmonic run
+                        <br>
+                        <span class="text-commentary"># Harmonic site is runing at http://localhost:9356</span>
+                    </p>
+                    <p>Now you're ready to <a href="https://github.com/JSRocksHQ/harmonic/wiki/Blogging#new-post" title="How to creating posts">create posts</a>!</p>
+                </div>
+
+                <div class="divisor">
+                    <hr class="fl">
+                    <svg version="1.1" class="" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
+                        <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#391e16" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
+                    </svg>
+                    <svg version="1.1" class="" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.191px" height="29.535px" viewBox="0 0 17.191 29.535" enable-background="new 0 0 17.191 29.535" xml:space="preserve">
+                        <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#391e16" points="17.191,0 1.438,15.457 6.365,15.466 0,29.535 17.166,12.907 11.773,12.661 "></polygon>
+                    </svg>
+                    <hr class="fr">
+                </div>
+            </div>
+
+            <div class="wrap-content text-default-position">
+                <img class="logo-js" src="/images/logo-js.png" alt="JavaScript Logo" title="JavaScript Logo">
+
+                <h2 class="title-default title-destak">Harmonic in action</h2>
+                <p class="obs">The website is already online <a href="http://jsrocks.org" title="JSROCKS Website" target="_blank">JSROCKS</a> </p>
+            </div>
+
+            <div class="wrap-content default-padding">
+                <ul class="square-box">
+                    <li>
+                        <div class="img">
+                            <a href="http://jsrocks.org" title="jsrocks.org" target="_blank">
+                                <img src="/images/logo-es6.png" alt="JSRocks logo">
+                            </a>
+                        </div>
+                        <div class="description">
+                            <a class="square-box-title" href="http://jsrocks.org" title="jsrocks.org" target="_blank">jsrocks.com</a>
+                            <p>
+                                A collaborative website about the
+                                <br>
+                                ECMAScript sixth edition, a.k.a. ES6
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img">
+                            <a href="http://harmonicjs.com" title="harmonicjs.com" target="_blank">
+                                <img src="/images/logo-harmonic-med.png" alt="Harmonic logo">
+                            </a>
+                        </div>
+                        <div class="description">
+                            <a class="square-box-title" href="http://harmonicjs.com" title="harmonicjs.com" target="_blank">harmonicjs.com</a>
+                            <p>Harmonic website itself.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img">
+                            <a href="http://jaydson.org" title="jaydson.org" target="_blank">
+                                <img src="/images/logo-jaydson.png" alt="Jaydson logo">
+                            </a>
+                        </div>
+                        <div class="description">
+                            <a class="square-box-title" href="http://jaydson.org" title="jaydson.org" target="_blank">jaydson.org</a>
+                            <p>Harmonic's maintainer personal website.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img">
+                            <a class="square-box-title" href="http://nodebotsday-poa.github.io/" title="Node Bots" target="_blank">
+                                <img src="/images/nodebot_logo.png" alt="NodeBot">
+                            </a>
+                        </div>
+                        <div class="description">
+                            <a class="square-box-title" href="http://nodebotsday-poa.github.io/" title="Node Bots" target="_blank">nodebotsday-poa.github.io</a>
+                            <p>Hardware using JavaScript</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/jsrockshq/harmonic/issues/new?title=New+showcase%3A+%5Binsert+name%5D%0A&body=Please+fill+the+following+out%3A%0A%0A-+Name%3A+%28correctly+formatted%29%0A-+Homepage+url%3A+%28homepage%2Fprimary+entry+point+for+users%29%0A-+Short+description%3A+%28short+description+of+the+project%29%0A-+Logo%3A+%28svg+if+possible%2C+pngs+over+330x175px+with+transparent+backgrounds+are+also+acceptable%29%0A%0A%3E+Example%3A%0A%3E%0A%3E+Name%3A+JSRocks%0A%3E+Homepage+url%3A+http%3A%2F%2Fjsrocks.org%0A%3E+Description%3A+A+collaborative+website+about+the+ECMAScript+sixth+edition%0A%3E+Logo%3A+http%3A%2F%2Fwww.jsrocks.org%2Fimages%2Flogo.svg%0A" title="Let us know" class="special-card" target="_blank">
+                            <h3 class="title-default">
+                                Are you using Harmonic?
+                                <br>
+                                <span>Let us know</span>
+                            </h3>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="wrap-content text-default-position">
+                <header class="title-sub-description title-sub-description-darker">
+                    <h2 class="title-default">Contributors</h2>
+                    <p class="sub-description">
+                        Some of <a href="https://github.com/JSRocksHQ/harmonic/graphs/contributors" title="Some of Harmonic's contributors" target="_blank">Harmonic's contributors</a>
+                    </p>
+                </header>
+                <ul id="wrapContributors"></ul>
+                <br clear="both">
+            </div>
+
+            <!--
+            <div class="wrap-content text-default-position">
+                <h3 class="title-default">
+                    Are you using Harmonic?
+                    <br>
+                    <a href="#" title="" class="title-destak">Let us know</a>
+                </h3>
+            </div>
+            -->
+        </div>
+
+        {% include "partials/footer.html" %}
     </div>
 
-
-    {% include "partials/footer.html" %}
     {% include "partials/scripts.html" %}
 </body>
 </html>

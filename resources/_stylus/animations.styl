@@ -3,7 +3,6 @@
 * @effect: thunder
 *
 **/
-
 @keyframes thunder {
     0%,
     20%,
@@ -11,6 +10,10 @@
     60%,
     80%,
     100% {
+        -webkit-transform: rotate3d(0, 0, 1, -4.5deg);
+        -moz-transform: rotate3d(0, 0, 1, -4.5deg);
+        -ms-transform: rotate3d(0, 0, 1, -4.5deg);
+        -o-transform: rotate3d(0, 0, 1, -4.5deg);
         transform: rotate3d(0, 0, 1, -4.5deg);
     }
 
@@ -19,40 +22,27 @@
     50%,
     70%,
     90% {
-        transform: rotate3d(0, 0, 1, 4.5deg);
-    }
-}
-
-@-webkit-keyframes thunder {
-    0%,
-    20%,
-    40%,
-    60%,
-    80%,
-    100% {
-        transform: rotate3d(0, 0, 1, -4.5deg);
-    }
-
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
+        -webkit-transform: rotate3d(0, 0, 1, -4.5deg);
+        -moz-transform: rotate3d(0, 0, 1, -4.5deg);
+        -ms-transform: rotate3d(0, 0, 1, -4.5deg);
+        -o-transform: rotate3d(0, 0, 1, -4.5deg);
         transform: rotate3d(0, 0, 1, 4.5deg);
     }
 }
 
 .icon:hover,
-.icon-title-ray {
-    animation-name: thunder;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
+.icon-title-ray
+    -webkit-animation-name: thunder
+    -webkit-animation-duration: 1s
+    -webkit-animation-fill-mode: both
+    -webkit-animation-iteration-count: infinite
 
-    -webkit-animation-name: thunder;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: thunder
+    -moz-animation-duration: 1s
+    -moz-animation-fill-mode: both
+    -moz-animation-iteration-count: infinite
 
-    transition: all 150ms ease 0s;
-}
+    animation-name: thunder
+    animation-duration: 1s
+    animation-fill-mode: both
+    animation-iteration-count: infinite
