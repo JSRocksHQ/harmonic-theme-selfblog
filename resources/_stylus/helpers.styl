@@ -3,8 +3,6 @@
 * HELPERS
 *
 **/
-
-
 .wrap-content,
 .wrap-sub-content
     margin 0 auto
@@ -68,8 +66,6 @@
 
 // BUTTONS
 .btn
-    display inline-block
-
     &-default
         font-family font_secundary-regular
         padding 13px
@@ -80,12 +76,14 @@
         border-radius 4px
         font-size 18px
         text-decoration none
+        display inline-block
+
+        animate-transition(all, .15s, ease)
 
         &:hover
             border solid 1px color_green-smooth
             color color_green-smooth
             background color_green-smooth-darker
-            transition(all 0.3s ease)
 
     &-link
         text-decoration underline

@@ -10,16 +10,7 @@ var HarmonicWebsite = function () {
 		PRIVATE = {},
 
 		W = window,
-		D = document,
-
-		BODY = D.body,
-		HTML = D.documentElement,
-
-		BREAKPOINTS = {
-			s: 'small',
-			m: 'medium',
-			l: 'large'
-		};
+		D = document;
 
     /*
     *
@@ -33,8 +24,8 @@ var HarmonicWebsite = function () {
 
             'use strict';
 
-            var oReq = new XMLHttpRequest();
-            var url = 'https://api.github.com/repos/JSRocksHQ/harmonic/contributors';
+            var oReq = new XMLHttpRequest(),
+                url = 'https://api.github.com/repos/JSRocksHQ/harmonic/contributors';
 
             function appendContributors() {
                 var result = JSON.parse(this.responseText),
@@ -60,24 +51,12 @@ var HarmonicWebsite = function () {
         })();
     };
 
-	/**
-	*
-	* CONSTRUCT
-	*
-	**/
-	(function HarmonicWebsite () {
-		// PRIVATE.viewportDefine(PUBLIC.windowSize());
-	})();
+	// (function HarmonicWebsite () {
+	// 	// PRIVATE.viewportDefine(PUBLIC.windowSize());
+	// })();
 
 	return PUBLIC;
 };
-
-
-/**
-*
-* HARMONIC OBJECT
-*
-**/
 var website = new HarmonicWebsite();
 
-website.contributors();
+//website.contributors();

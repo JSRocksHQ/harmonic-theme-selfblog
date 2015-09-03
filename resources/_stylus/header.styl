@@ -3,15 +3,14 @@
 * HEADER
 *
 **/
-
-.header
-    width 100%
-    margin 0 0 26px
-
-    .header-bar
-        height 40px
-        background color_brown
-        box-shadow 0px -1px 3px rgba(0, 0, 0, 0.15) inset
+.slogan-bar
+    width: 100%
+    height 40px
+    background color_brown
+    position fixed
+    left 0
+    top 0
+    z-index 0
 
     .slogan
         line-height 40px
@@ -21,11 +20,15 @@
         font-size 14px
         font-family font_secundary-regular
 
+.header
+    width 100%
+    margin 0 0 26px
+
     .logo
         display block
         width 525px
         height 126px
-        margin 40px auto 20px
+        margin 0 auto 20px
         position relative
         overflow hidden
 
