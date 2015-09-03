@@ -59,4 +59,4 @@ var HarmonicWebsite = function () {
 };
 var website = new HarmonicWebsite();
 
-//website.contributors();
+website.contributors();
